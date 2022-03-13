@@ -7,15 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF6E561127DCC21D00A44C80 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6E561027DCC21D00A44C80 /* UIViewController+Extension.swift */; };
+		AF6E561327DCDB5100A44C80 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6E561227DCDB5100A44C80 /* UIView+Extension.swift */; };
 		AFB909D127DBAB0800872C4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB909D027DBAB0800872C4F /* AppDelegate.swift */; };
 		AFB909D327DBAB0800872C4F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB909D227DBAB0800872C4F /* SceneDelegate.swift */; };
 		AFB909D527DBAB0800872C4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB909D427DBAB0800872C4F /* ViewController.swift */; };
 		AFB909D827DBAB0800872C4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFB909D627DBAB0800872C4F /* Main.storyboard */; };
 		AFB909DA27DBAB0900872C4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFB909D927DBAB0900872C4F /* Assets.xcassets */; };
 		AFB909DD27DBAB0A00872C4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFB909DB27DBAB0900872C4F /* LaunchScreen.storyboard */; };
+		AFB909E627DBABFB00872C4F /* BaseLayers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB909E527DBABFB00872C4F /* BaseLayers.swift */; };
+		AFB909EC27DBAC9D00872C4F /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB909EB27DBAC9D00872C4F /* LoadingView.swift */; };
+		AFB909EE27DBAD0D00872C4F /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB909ED27DBAD0D00872C4F /* UIApplication+Extension.swift */; };
+		DE96DBC61D4F75F62C7255AD /* Pods_LoodosMovie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 049BB4BF01958D66DA2191ED /* Pods_LoodosMovie.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		049BB4BF01958D66DA2191ED /* Pods_LoodosMovie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoodosMovie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A48DE3169D1E2EAD5729319 /* Pods-LoodosMovie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoodosMovie.release.xcconfig"; path = "Target Support Files/Pods-LoodosMovie/Pods-LoodosMovie.release.xcconfig"; sourceTree = "<group>"; };
+		AF6E561027DCC21D00A44C80 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		AF6E561227DCDB5100A44C80 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		AFB909CD27DBAB0800872C4F /* LoodosMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoodosMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFB909D027DBAB0800872C4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFB909D227DBAB0800872C4F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +34,10 @@
 		AFB909D927DBAB0900872C4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFB909DC27DBAB0A00872C4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFB909DE27DBAB0A00872C4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFB909E527DBABFB00872C4F /* BaseLayers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLayers.swift; sourceTree = "<group>"; };
+		AFB909EB27DBAC9D00872C4F /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		AFB909ED27DBAD0D00872C4F /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		B091D9FF6155FF6158EF5EBA /* Pods-LoodosMovie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoodosMovie.debug.xcconfig"; path = "Target Support Files/Pods-LoodosMovie/Pods-LoodosMovie.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE96DBC61D4F75F62C7255AD /* Pods_LoodosMovie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +57,8 @@
 			children = (
 				AFB909CF27DBAB0800872C4F /* LoodosMovie */,
 				AFB909CE27DBAB0800872C4F /* Products */,
+				F1FD72A3EDBE913D3E54A257 /* Pods */,
+				FD5787B18A13BED07B53A70C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +76,58 @@
 				AFB909D027DBAB0800872C4F /* AppDelegate.swift */,
 				AFB909D227DBAB0800872C4F /* SceneDelegate.swift */,
 				AFB909D427DBAB0800872C4F /* ViewController.swift */,
+				AFB909EA27DBAC8200872C4F /* ReusableViews */,
+				AFB909E727DBAC5300872C4F /* Extensions */,
+				AFB909E427DBABDA00872C4F /* Utilities */,
 				AFB909D627DBAB0800872C4F /* Main.storyboard */,
 				AFB909D927DBAB0900872C4F /* Assets.xcassets */,
 				AFB909DB27DBAB0900872C4F /* LaunchScreen.storyboard */,
 				AFB909DE27DBAB0A00872C4F /* Info.plist */,
 			);
 			path = LoodosMovie;
+			sourceTree = "<group>";
+		};
+		AFB909E427DBABDA00872C4F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				AFB909E527DBABFB00872C4F /* BaseLayers.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		AFB909E727DBAC5300872C4F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AFB909ED27DBAD0D00872C4F /* UIApplication+Extension.swift */,
+				AF6E561027DCC21D00A44C80 /* UIViewController+Extension.swift */,
+				AF6E561227DCDB5100A44C80 /* UIView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AFB909EA27DBAC8200872C4F /* ReusableViews */ = {
+			isa = PBXGroup;
+			children = (
+				AFB909EB27DBAC9D00872C4F /* LoadingView.swift */,
+			);
+			path = ReusableViews;
+			sourceTree = "<group>";
+		};
+		F1FD72A3EDBE913D3E54A257 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B091D9FF6155FF6158EF5EBA /* Pods-LoodosMovie.debug.xcconfig */,
+				9A48DE3169D1E2EAD5729319 /* Pods-LoodosMovie.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FD5787B18A13BED07B53A70C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				049BB4BF01958D66DA2191ED /* Pods_LoodosMovie.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +137,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AFB909E127DBAB0A00872C4F /* Build configuration list for PBXNativeTarget "LoodosMovie" */;
 			buildPhases = (
+				B807322DE7AADF03CFEC74F3 /* [CP] Check Pods Manifest.lock */,
 				AFB909C927DBAB0800872C4F /* Sources */,
 				AFB909CA27DBAB0800872C4F /* Frameworks */,
 				AFB909CB27DBAB0800872C4F /* Resources */,
+				F568E71A1EFB28C33AE2053A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +198,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B807322DE7AADF03CFEC74F3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LoodosMovie-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F568E71A1EFB28C33AE2053A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoodosMovie/Pods-LoodosMovie-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoodosMovie/Pods-LoodosMovie-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LoodosMovie/Pods-LoodosMovie-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AFB909C927DBAB0800872C4F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,7 +247,12 @@
 			files = (
 				AFB909D527DBAB0800872C4F /* ViewController.swift in Sources */,
 				AFB909D127DBAB0800872C4F /* AppDelegate.swift in Sources */,
+				AF6E561327DCDB5100A44C80 /* UIView+Extension.swift in Sources */,
+				AFB909E627DBABFB00872C4F /* BaseLayers.swift in Sources */,
 				AFB909D327DBAB0800872C4F /* SceneDelegate.swift in Sources */,
+				AF6E561127DCC21D00A44C80 /* UIViewController+Extension.swift in Sources */,
+				AFB909EE27DBAD0D00872C4F /* UIApplication+Extension.swift in Sources */,
+				AFB909EC27DBAC9D00872C4F /* LoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +396,7 @@
 		};
 		AFB909E227DBAB0A00872C4F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B091D9FF6155FF6158EF5EBA /* Pods-LoodosMovie.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -297,6 +410,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,6 +426,7 @@
 		};
 		AFB909E327DBAB0A00872C4F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A48DE3169D1E2EAD5729319 /* Pods-LoodosMovie.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -325,6 +440,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
