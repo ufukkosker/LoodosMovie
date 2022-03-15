@@ -33,9 +33,6 @@ class MovieSearchPresenter: MovieSearchModule.Presenter {
   }
   
   func didFetchSearchMovie(_ movie: [Movie]) {
-    
-//    tableItems.append(contentsOf: movie.map({ .movie(model: makeMovieItem(item: $0)) }))
-//    tableItems.append(contentsOf: movie.map({ .movie(model: .init(title: "1", movie: makeMovieItem(item: $0)))}))
     tableItems.append(.movie(model: .init(title: String(pageNumber), movie: movie.map({ makeMovieItem(item: $0)}))))
     view.updateMovieTableView(for: tableItems)
   }
@@ -57,11 +54,6 @@ extension MovieSearchPresenter {
   private func makeMovieItem(item: Movie) -> MovieSearchModule.MovieViewModel {
     
     return .init(title: item.title ?? "", year: item.year ?? "", imdbId: item.imdbID ?? "", type: item.type ?? "", poster: item.poster ?? "")
-  }
-  
-  func makeMovieItemPagination(item: Movie) -> MovieSearchModule.MovieTableItemPagination {
-    
-    return .init(title: String(pageNumber), movie: [.init(title: item.title ?? "", year: item.year ?? "", imdbId: item.imdbID ?? "", type: item.type ?? "", poster: item.poster ?? "")])
   }
 }
 
