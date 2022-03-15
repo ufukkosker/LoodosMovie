@@ -31,7 +31,9 @@ extension UIViewController {
   }
 
   func hideLoadingView() {
-    getLoadingView()?.removeFromSuperview()
+    DispatchQueue.main.async {
+      self.getLoadingView()?.removeFromSuperview()
+    }
   }
 }
  

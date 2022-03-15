@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Heavy.otf">
+            <string>SFProText-Heavy</string>
+        </array>
+        <array key="SF-Pro-Text-Light.otf">
+            <string>SFProText-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="180" id="KGk-i7-Jjw" customClass="EmptyCell" customModule="LoodosMovie" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="50c-EX-x9w">
+                        <rect key="frame" x="16" y="16" width="288" height="148"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yix-Wk-xmx" customClass="AnimationView" customModule="Lottie">
+                        <rect key="frame" x="130" y="16" width="60" height="60"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="QAU-1z-Gns"/>
+                            <constraint firstAttribute="width" constant="60" id="T1s-N5-ryX"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="loading"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Film Bulunamadı" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adL-mR-yyO">
+                        <rect key="frame" x="16" y="92" width="288" height="16"/>
+                        <fontDescription key="fontDescription" name="SFProText-Heavy" family="SF Pro Text" pointSize="21"/>
+                        <color key="textColor" systemColor="systemRedColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Üzgünüz. Aradığınız filmi bulamadık. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XC7-QP-lkd">
+                        <rect key="frame" x="16" y="124" width="288" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="qtb-xq-G9M"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProText-Light" family="SF Pro Text" pointSize="16"/>
+                        <color key="textColor" systemColor="systemGrayColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="XC7-QP-lkd" firstAttribute="trailing" secondItem="50c-EX-x9w" secondAttribute="trailing" id="5az-yd-K94"/>
+                    <constraint firstItem="Yix-Wk-xmx" firstAttribute="top" secondItem="50c-EX-x9w" secondAttribute="top" id="HWF-Ri-wQr"/>
+                    <constraint firstItem="Yix-Wk-xmx" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="KR4-Z5-piA"/>
+                    <constraint firstAttribute="trailing" secondItem="50c-EX-x9w" secondAttribute="trailing" constant="16" id="Le3-jf-K4T"/>
+                    <constraint firstItem="50c-EX-x9w" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="PD9-p1-WS5"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="XC7-QP-lkd" secondAttribute="bottom" id="SUv-zI-VwU"/>
+                    <constraint firstAttribute="bottom" secondItem="50c-EX-x9w" secondAttribute="bottom" constant="16" id="VLL-6w-hnM"/>
+                    <constraint firstItem="XC7-QP-lkd" firstAttribute="top" secondItem="adL-mR-yyO" secondAttribute="bottom" constant="16" id="a8f-kf-iGg"/>
+                    <constraint firstItem="50c-EX-x9w" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="cBX-V1-xho"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="adL-mR-yyO" secondAttribute="trailing" id="e4F-15-7Mc"/>
+                    <constraint firstItem="adL-mR-yyO" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="g5j-XV-N4c"/>
+                    <constraint firstItem="adL-mR-yyO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="kcK-FL-koM"/>
+                    <constraint firstItem="XC7-QP-lkd" firstAttribute="leading" secondItem="50c-EX-x9w" secondAttribute="leading" id="mJP-rH-kcR"/>
+                    <constraint firstItem="adL-mR-yyO" firstAttribute="top" secondItem="Yix-Wk-xmx" secondAttribute="bottom" constant="16" id="oAQ-rf-Cqj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="2jw-xf-T22"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="animationView" destination="Yix-Wk-xmx" id="6rF-d8-b62"/>
+                <outlet property="errorDescriptionLabel" destination="XC7-QP-lkd" id="Xlq-Lp-dim"/>
+                <outlet property="errorTitleLabel" destination="adL-mR-yyO" id="Bj5-I7-ndh"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="214.95535714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
