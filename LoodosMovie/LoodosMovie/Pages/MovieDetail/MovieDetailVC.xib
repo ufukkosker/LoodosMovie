@@ -77,7 +77,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="VrP-Og-VEv">
-                    <rect key="frame" x="16" y="296" width="382" height="85"/>
+                    <rect key="frame" x="16" y="301" width="382" height="85"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ebf-Sg-h6Q">
                             <rect key="frame" x="0.0" y="0.0" width="382" height="17"/>
@@ -216,7 +216,7 @@
                 <constraint firstItem="VrP-Og-VEv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="7q2-BW-eBj"/>
                 <constraint firstItem="u2t-O3-q1f" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="AAa-8b-2kQ"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="VrP-Og-VEv" secondAttribute="trailing" constant="16" id="CYK-3C-Fhe"/>
-                <constraint firstItem="VrP-Og-VEv" firstAttribute="top" secondItem="sQn-kS-482" secondAttribute="bottom" constant="8" id="CmW-0u-mAA"/>
+                <constraint firstItem="VrP-Og-VEv" firstAttribute="top" secondItem="wMm-dD-crc" secondAttribute="bottom" constant="40" id="KrI-ta-xZe"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wMm-dD-crc" secondAttribute="trailing" constant="16" id="LXH-cj-toR"/>
                 <constraint firstItem="o8b-CL-vRT" firstAttribute="top" secondItem="u2t-O3-q1f" secondAttribute="bottom" constant="16" id="Pb5-W1-E1w"/>
                 <constraint firstItem="sQn-kS-482" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="WaL-bA-M9T"/>
