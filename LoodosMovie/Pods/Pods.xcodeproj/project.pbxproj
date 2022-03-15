@@ -1021,7 +1021,6 @@
 				544D59D8601166F04A8929896B99A730 /* VectorsExtensions.swift */,
 				4EFF34FD631519E8EE70258DB49B4854 /* Support Files */,
 			);
-			name = "lottie-ios";
 			path = "lottie-ios";
 			sourceTree = "<group>";
 		};
@@ -1205,7 +1204,7 @@
 			);
 			name = Moya;
 			productName = Moya;
-			productReference = 3756A9BBE41ABEE8DCBF5BCA6972C4DA /* Moya */;
+			productReference = 3756A9BBE41ABEE8DCBF5BCA6972C4DA /* Moya.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		DC1C87E6F6EF10148794D6B4A9F5D403 /* Pods-LoodosMovie */ = {
@@ -1228,7 +1227,43 @@
 			);
 			name = "Pods-LoodosMovie";
 			productName = Pods_LoodosMovie;
-			productReference = 5C3880CBB5BFE439FE40E4238139DF7B /* Pods-LoodosMovie */;
+			productReference = 5C3880CBB5BFE439FE40E4238139DF7B /* Pods_LoodosMovie.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E163AC315AD24CFBD60C178D602BFC83 /* Result */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A6A49DD54CB3F56DA1BD019D9394DA6 /* Build configuration list for PBXNativeTarget "Result" */;
+			buildPhases = (
+				A300772C539F6144E1564CED039EBA5A /* Headers */,
+				4929F23A7AC839ED33AA2E1887DA86A8 /* Sources */,
+				5962FBF599E38D4EDE3269D177E3B742 /* Frameworks */,
+				50953C72BEA02979457B6EDAAD1ECD81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Result;
+			productName = Result;
+			productReference = 0461B3F80FC05957690727254D64DB36 /* Result */;
+			productType = "com.apple.product-type.framework";
+		};
+		E8022D22FAA6690B5E1C379C1BCE1491 /* Kingfisher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69ACD8654734266A348C6FF68E734010 /* Build configuration list for PBXNativeTarget "Kingfisher" */;
+			buildPhases = (
+				7AE52B176E9872452FD890FC7F460CE1 /* Headers */,
+				3C1DA515D615F8CE75565ACE14378882 /* Sources */,
+				81DB1665E1495609510BA493822E5A85 /* Frameworks */,
+				CFEB3E9FD20A01120B40D65B82D8F26F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kingfisher;
+			productName = Kingfisher;
+			productReference = C3F44C782D64D7EB20B61CE3844EBFAD /* Kingfisher */;
 			productType = "com.apple.product-type.framework";
 		};
 		E163AC315AD24CFBD60C178D602BFC83 /* Result */ = {
@@ -1282,7 +1317,7 @@
 			);
 			name = Alamofire;
 			productName = Alamofire;
-			productReference = 5D797E9A5C5782CE845840781FA1CC81 /* Alamofire */;
+			productReference = 5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
