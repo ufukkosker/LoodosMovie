@@ -24,7 +24,7 @@ protocol MovieSearchPresenterProtocol: BasePresenter {
   var interactor: MovieSearchModule.Interactor! { get set }
   var router: MovieSearchModule.Router! { get set }
   
-  func didChangePage(page: String)
+  func didChangePage()
   func didSearchMovie(_ movieName: String)
   func didFetchSearchMovie(_ movie: [Movie])
   func showServiceErrorOnTableView(error message: String)
@@ -52,6 +52,7 @@ extension MovieSearchModule {
   enum MovieTableItem {
     case empty(errorDescription: String)
     case movie(model: MovieTableItemPagination)
+    case lastPage
   }
   
   struct MovieViewModel {

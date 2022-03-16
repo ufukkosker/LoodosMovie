@@ -39,6 +39,7 @@ class MovieSearchDataSource: NSObject {
   private func registerCells() {
     tableView?.registerCell(EmptyCell.self)
     tableView?.registerCell(MovieSearchCell.self)
+    tableView?.registerCell(LastPageCell.self)
     tableView?.registerHeaderFooterView(HeaderView.self)
   }
   
@@ -72,6 +73,8 @@ extension MovieSearchDataSource: UITableViewDataSource, UIScrollViewDelegate {
       return 1
     case .movie(model: let model):
       return model.movie.count
+    case .lastPage:
+      return 1
     }
   }
   
@@ -82,15 +85,15 @@ extension MovieSearchDataSource: UITableViewDataSource, UIScrollViewDelegate {
     case .movie(model: let model):
       let movieCell: MovieSearchCell = tableView.dequeueReusableCell(indexPath: indexPath)
       movieCell.prepareMovieCell(for: model.movie[indexPath.row])
-      
-      //      DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-      
-      //      }
       cell = movieCell
     case .empty(errorDescription: let message):
       let emptyCell: EmptyCell = tableView.dequeueReusableCell(indexPath: indexPath)
       emptyCell.prepareErrorText(description: .init(rawValue: message) ?? .non)
       cell = emptyCell
+    case .lastPage:
+      let lastCell: LastPageCell = tableView.dequeueReusableCell(indexPath: indexPath)
+      lastCell.prepareMessage()
+      cell = lastCell
     }
     return cell
   }
@@ -109,6 +112,11 @@ extension MovieSearchDataSource: UITableViewDataSource, UIScrollViewDelegate {
       headerView.titleLabel.text = "Sayfa \(model.title)"
       headerView.tintColor = .clear
       return headerView
+    case .lastPage:
+      let headerView: HeaderView = tableView.dequeueReusableHeaderFooterView()
+      headerView.titleLabel.text = "Son Sayfa"
+      headerView.tintColor = .clear
+      return headerView
     }
   }
   
@@ -119,7 +127,7 @@ extension MovieSearchDataSource: UITableViewDataSource, UIScrollViewDelegate {
       
       if offsetY > contentHeight - scrollView.frame.size.height {
         
-        self.presenter?.didChangePage(page: String(self.pageCount))
+        self.presenter?.didChangePage()
       }
     }
   }
@@ -134,6 +142,8 @@ extension MovieSearchDataSource: UITableViewDelegate {
       break
     case .movie(model: let model):
       presenter?.prepareNavigateToDetailVC(for: model.movie[indexPath.row])
+    case .lastPage:
+      break
     }
   }
   
@@ -142,6 +152,8 @@ extension MovieSearchDataSource: UITableViewDelegate {
     case .movie:
       return 160
     case .empty:
+      return 185
+    case .lastPage:
       return 185
     }
   }

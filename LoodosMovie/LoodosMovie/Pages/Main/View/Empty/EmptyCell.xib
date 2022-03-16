@@ -38,7 +38,7 @@
                             <constraint firstAttribute="width" constant="60" id="T1s-N5-ryX"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="loading"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="notFound"/>
                         </userDefinedRuntimeAttributes>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Film Bulunamadı" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adL-mR-yyO">
@@ -85,6 +85,9 @@
             <point key="canvasLocation" x="137.68115942028987" y="214.95535714285714"/>
         </tableViewCell>
     </objects>
+    <designables>
+        <designable name="Yix-Wk-xmx"/>
+    </designables>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

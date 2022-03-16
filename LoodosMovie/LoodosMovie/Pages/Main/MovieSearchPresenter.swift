@@ -15,14 +15,16 @@ class MovieSearchPresenter: MovieSearchModule.Presenter {
   private var searchText: String = ""
   private var pageNumber: Int = 1
   private var tableItems: [MovieSearchModule.MovieTableItem] = []
+  private var requestedNewPage: Bool = false
   
   func notifyViewLoaded() {
     
   }
   
-  func didChangePage(page: String) {
+  func didChangePage() {
     pageNumber += 1
     interactor.fetchMovie(searchText, page: String(pageNumber))
+    requestedNewPage = true
   }
   
   func didSearchMovie(_ movieName: String) {
@@ -38,9 +40,15 @@ class MovieSearchPresenter: MovieSearchModule.Presenter {
   }
   
   func showServiceErrorOnTableView(error message: String) {
-    var tableItems: [MovieSearchModule.MovieTableItem] = []
-    tableItems.append(.empty(errorDescription: message))
-    view.updateMovieTableView(for: tableItems)
+    
+    if requestedNewPage {
+      tableItems.append(.lastPage)
+      view.updateMovieTableView(for: tableItems)
+    } else {
+      var tableItems: [MovieSearchModule.MovieTableItem] = []
+      tableItems.append(.empty(errorDescription: message))
+      view.updateMovieTableView(for: tableItems)
+    }
   }
   
   func prepareNavigateToDetailVC(for model: MovieSearchModule.MovieViewModel) {

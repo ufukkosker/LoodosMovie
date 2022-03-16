@@ -21,6 +21,7 @@ class MovieDetailVC: UIViewController, MovieDetailModule.View {
   @IBOutlet weak var languageLabel: UILabel!
   @IBOutlet weak var awardsLabel: UILabel!
   @IBOutlet weak var movieRatingCircleView: CircleView!
+  @IBOutlet weak var ratingLabel: UILabel!
   
   var presenter: MovieDetailModule.Presenter!
   
@@ -35,6 +36,7 @@ class MovieDetailVC: UIViewController, MovieDetailModule.View {
     if let rating = Float(model.imdbRating ?? ""), let poster = URL(string: model.poster ?? "") {
       posterImageView.kf.setImage(with: poster)
       movieRatingCircleView.setProgressWithAnimation(duration: 1.5, value: rating / 10)
+      ratingLabel.text = "\(rating)"
       titleLabel.text = model.title
       plotLabel.text = model.plot
       dateLabel.text = model.year

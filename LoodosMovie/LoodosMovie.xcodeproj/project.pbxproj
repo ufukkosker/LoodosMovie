@@ -24,6 +24,8 @@
 		AF376C2527DFE647008CC872 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF376C2427DFE647008CC872 /* NibLoadable.swift */; };
 		AF376C2727DFE67C008CC872 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF376C2627DFE67C008CC872 /* UITableView+Extension.swift */; };
 		AF376C2927DFE7D3008CC872 /* MovieSearchEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF376C2827DFE7D3008CC872 /* MovieSearchEntity.swift */; };
+		AF4C4E4027E1D33B007E1194 /* LastPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4C4E3E27E1D33B007E1194 /* LastPageCell.swift */; };
+		AF4C4E4127E1D33B007E1194 /* LastPageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF4C4E3F27E1D33B007E1194 /* LastPageCell.xib */; };
 		AF6E561127DCC21D00A44C80 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6E561027DCC21D00A44C80 /* UIViewController+Extension.swift */; };
 		AF6E561327DCDB5100A44C80 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6E561227DCDB5100A44C80 /* UIView+Extension.swift */; };
 		AF8889A427E0FAFF006B52CB /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8889A327E0FAFF006B52CB /* CircleView.swift */; };
@@ -73,7 +75,7 @@
 		AFDB731F27E09E7D00D00015 /* EmptyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDB731D27E09E7D00D00015 /* EmptyCell.swift */; };
 		AFDB732027E09E7D00D00015 /* EmptyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFDB731E27E09E7D00D00015 /* EmptyCell.xib */; };
 		AFDB732227E0A4B400D00015 /* ServiceErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDB732127E0A4B400D00015 /* ServiceErrorResponse.swift */; };
-		AFDB732427E0AFE100D00015 /* BaseAlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDB732327E0AFE100D00015 /* BaseAlertManager.swift */; };
+		AFDB732427E0AFE100D00015 /* BaseServiceAlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDB732327E0AFE100D00015 /* BaseServiceAlertManager.swift */; };
 		AFDB732627E0B04000D00015 /* BaseAlertModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDB732527E0B04000D00015 /* BaseAlertModel.swift */; };
 		AFDB732927E0CB6F00D00015 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDB732827E0CB6F00D00015 /* HeaderView.swift */; };
 		AFDB733427E0D2F000D00015 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDB733327E0D2F000D00015 /* UIFont+Extension.swift */; };
@@ -103,6 +105,8 @@
 		AF376C2427DFE647008CC872 /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		AF376C2627DFE67C008CC872 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		AF376C2827DFE7D3008CC872 /* MovieSearchEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchEntity.swift; sourceTree = "<group>"; };
+		AF4C4E3E27E1D33B007E1194 /* LastPageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastPageCell.swift; sourceTree = "<group>"; };
+		AF4C4E3F27E1D33B007E1194 /* LastPageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LastPageCell.xib; sourceTree = "<group>"; };
 		AF6E561027DCC21D00A44C80 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		AF6E561227DCDB5100A44C80 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		AF8889A327E0FAFF006B52CB /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
@@ -150,7 +154,7 @@
 		AFDB731D27E09E7D00D00015 /* EmptyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyCell.swift; sourceTree = "<group>"; };
 		AFDB731E27E09E7D00D00015 /* EmptyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyCell.xib; sourceTree = "<group>"; };
 		AFDB732127E0A4B400D00015 /* ServiceErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceErrorResponse.swift; sourceTree = "<group>"; };
-		AFDB732327E0AFE100D00015 /* BaseAlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAlertManager.swift; sourceTree = "<group>"; };
+		AFDB732327E0AFE100D00015 /* BaseServiceAlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseServiceAlertManager.swift; sourceTree = "<group>"; };
 		AFDB732527E0B04000D00015 /* BaseAlertModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAlertModel.swift; sourceTree = "<group>"; };
 		AFDB732827E0CB6F00D00015 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		AFDB733327E0D2F000D00015 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
@@ -222,6 +226,15 @@
 				AFB909EB27DBAC9D00872C4F /* LoadingView.swift */,
 			);
 			path = Loading;
+			sourceTree = "<group>";
+		};
+		AF4C4E3B27E1D237007E1194 /* LastPage */ = {
+			isa = PBXGroup;
+			children = (
+				AF4C4E3E27E1D33B007E1194 /* LastPageCell.swift */,
+				AF4C4E3F27E1D33B007E1194 /* LastPageCell.xib */,
+			);
+			path = LastPage;
 			sourceTree = "<group>";
 		};
 		AF8889A127E0FAE2006B52CB /* CenterAlert */ = {
@@ -423,7 +436,7 @@
 			isa = PBXGroup;
 			children = (
 				AF376C1427DFC816008CC872 /* BaseAlertDialogs.swift */,
-				AFDB732327E0AFE100D00015 /* BaseAlertManager.swift */,
+				AFDB732327E0AFE100D00015 /* BaseServiceAlertManager.swift */,
 				AFDB732527E0B04000D00015 /* BaseAlertModel.swift */,
 			);
 			path = Alert;
@@ -480,6 +493,7 @@
 		AFED873927E0756000C4799F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AF4C4E3B27E1D237007E1194 /* LastPage */,
 				AFDB732727E0CB4A00D00015 /* Header */,
 				AFDB731C27E09E6F00D00015 /* Empty */,
 				AFDB731B27E09E6200D00015 /* Movie */,
@@ -575,6 +589,7 @@
 			files = (
 				AF376C0D27DFB9E5008CC872 /* CenterAlertView.xib in Resources */,
 				AF376C1E27DFDF65008CC872 /* MovieSearchVC.xib in Resources */,
+				AF4C4E4127E1D33B007E1194 /* LastPageCell.xib in Resources */,
 				AF8889AE27E0FF84006B52CB /* MovieDetailVC.xib in Resources */,
 				AFB008CB27DE7C80002C644C /* notFound.json in Resources */,
 				AFB008BF27DE7149002C644C /* SF-Pro-Text-Regular.otf in Resources */,
@@ -646,7 +661,7 @@
 			files = (
 				AF8889B127E0FF84006B52CB /* MovieDetailRouter.swift in Sources */,
 				AFB0088527DE3502002C644C /* BaseTarget.swift in Sources */,
-				AFDB732427E0AFE100D00015 /* BaseAlertManager.swift in Sources */,
+				AFDB732427E0AFE100D00015 /* BaseServiceAlertManager.swift in Sources */,
 				AFB909D127DBAB0800872C4F /* AppDelegate.swift in Sources */,
 				AF376C1527DFC816008CC872 /* BaseAlertDialogs.swift in Sources */,
 				AF376C2527DFE647008CC872 /* NibLoadable.swift in Sources */,
@@ -664,6 +679,7 @@
 				AFB909E627DBABFB00872C4F /* BaseLayers.swift in Sources */,
 				AFB008A627DE4E12002C644C /* SplashContract.swift in Sources */,
 				AFDB732927E0CB6F00D00015 /* HeaderView.swift in Sources */,
+				AF4C4E4027E1D33B007E1194 /* LastPageCell.swift in Sources */,
 				AFB909D327DBAB0800872C4F /* SceneDelegate.swift in Sources */,
 				AF6E561127DCC21D00A44C80 /* UIViewController+Extension.swift in Sources */,
 				AFB008B927DE5CF0002C644C /* NetworkReachability.swift in Sources */,

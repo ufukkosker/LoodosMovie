@@ -1,23 +1,24 @@
 //
-//  EmptyCell.swift
+//  LastPageCell.swift
 //  LoodosMovie
 //
-//  Created by Ufuk Köşker on 15.03.2022.
+//  Created by Ufuk Köşker on 16.03.2022.
 //
 
 import UIKit
 import Lottie
 
-class EmptyCell: UITableViewCell, NibLoadable {
+class LastPageCell: UITableViewCell, NibLoadable {
   
   @IBOutlet weak var animationView: AnimationView!
-  @IBOutlet weak var errorTitleLabel: UILabel!
-  @IBOutlet weak var errorDescriptionLabel: UILabel!
+  @IBOutlet weak var titleLabel: UILabel!
+  @IBOutlet weak var descriptionLabel: UILabel!
   
   override func awakeFromNib() {
     super.awakeFromNib()
     // Initialization code
-    selectionStyle = .none
+    animationView.loopMode = .loop
+    animationView.play()
   }
   
   override func setSelected(_ selected: Bool, animated: Bool) {
@@ -26,10 +27,10 @@ class EmptyCell: UITableViewCell, NibLoadable {
     // Configure the view for the selected state
   }
   
-  func prepareErrorText(description: ServiceError) {
-    BaseServiceAlertManager.shared.prepareAlert(for: description) { alertModel in
-      errorTitleLabel.text = alertModel.title
-      errorDescriptionLabel.text = alertModel.description
+  func prepareMessage() {
+    BaseInAppAlertManager.shared.prepareAlert(for: .lastPage, .lastPage, .lastPageDescription) { alertModel in
+      titleLabel.text = alertModel.title
+      descriptionLabel.text = alertModel.description
       animationView.animation = alertModel.icon
       animationView.loopMode = .loop
       animationView.play()
