@@ -19,7 +19,7 @@ class MovieSearchVC: UIViewController, MovieSearchModule.View {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-      title = "Loodos Movie"
+      title = "Loodos Moviee"
       searchController.searchBar.delegate = self
       navigationItem.searchController = searchController
       setupUI()
